@@ -5,7 +5,7 @@ const ErrorPage = () => {
     <>
       <section style={{ textAlign: "center" }}>
         <p>Error 404</p>
-        <Link to='/' style={{ fontSize: 20, color: "red"}} >
+        <Link to='/home' style={{ fontSize: 20, color: "red"}} >
         &#60; &#60; &#60; return to previous page
         </Link>
       </section>

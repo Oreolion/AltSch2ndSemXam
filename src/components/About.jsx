@@ -29,7 +29,7 @@ const About = () => {
     `;
 
   const headers = {
-    Authorization: `Bearer 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`,
+    Authorization: `Bearer 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`,
     "Content-Type": "application/json",
   };
 

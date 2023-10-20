@@ -33,7 +33,7 @@ function Home() {
     `;
 
   const headers = {
-    Authorization: `Bearer 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`,
+    Authorization: `Bearer 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`,
     "Content-Type": "application/json",
   };
 
@@ -93,7 +93,7 @@ function Home() {
                         <p className="p"> {repository.name}</p>
                         <Link
                           className="repo__link"
-                          to={`about/${repository.name}`}
+                          to={`/about/${repository.name}`}
                           onClick={() => handleClick(repository.name)}
                         >
                           More information about this Repository &#62;&#62;&#62;
