@@ -33,7 +33,7 @@ function Home() {
     `;
 
   const headers = {
-    Authorization: `Bearer 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`,
+    Authorization: `Bearer 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`,
     "Content-Type": "application/json",
   };
 
@@ -79,7 +79,6 @@ function Home() {
   return (
     <>
       <Suspense fallback={<ErrorBoundary />}>
-        <ErrorBoundary>
           <section className="repo__container">
             <h1>my github repositories</h1>
 
@@ -100,26 +99,26 @@ function Home() {
                           More information about this Repository &#62;&#62;&#62;
                         </Link>
                       </article>
-                      {!isLoading && <BsGithub className="github__logo" />}
+                       <BsGithub className="github__logo" />
                     </li>
                   ))}
-                  {!isLoading && (
-                    <button
+                  
+                  
+                </>
+              )}
+            </ul>
+            <button
                       onClick={triggerError}
                       style={{ marginBottom: 20, padding: 10, margin: 5 }}
                     >
                       trigger error
                     </button>
-                  )}
+                  
                   <div style={{color: 'goldenrod', textAlign: 'center'}}>© 2023 Altschool second semester Examination</div>
                   
-                </>
-              )}
-            </ul>
 
             <PiArrowFatLinesUpFill className="up-arrow" onClick={scrollToTop} />
           </section>
-        </ErrorBoundary>
       </Suspense>
     </>
   );

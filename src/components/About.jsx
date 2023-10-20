@@ -29,7 +29,7 @@ const About = () => {
     `;
 
   const headers = {
-    Authorization: `Bearer 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`,
+    Authorization: `Bearer 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`,
     "Content-Type": "application/json",
   };
 
@@ -37,7 +37,6 @@ const About = () => {
     async function fetchData() {
       try {
         const result = await axios.post(postURL, { query }, { headers });
-        // console.log(result.data);
         setPost(result.data.data.repository);
       } catch (error) {
         console.error(error);
@@ -108,7 +107,7 @@ const About = () => {
         <span>
 
 
-        <Link className="link" to="/home">
+        <Link className="link" to="/">
           &#60; &#60; &#60; Go to Home Page
           </Link>
         <Link style={{color: 'red'}} to="/github.com">Go to Github</Link>
